@@ -39,7 +39,9 @@ class Song
   
   def self.alphabetical
     self.all.sort_by do |a,b| 
-      puts a.class
+      puts "class of a is:" + a.class
+      puts "name of a is:" + a.name
+      puts "class of b is:" + b.class
       a.name<=>b.name
     end
   end
