@@ -38,10 +38,8 @@ class Song
   end
   
   def self.alphabetical
+    puts self.all
     self.all.sort_by do |a,b| 
-      puts "class of a is:" + a.class.to_s
-      puts "name of a is:" + a.name.to_s
-      puts "class of b is:" + b.class.to_s
       a.name<=>b.name
     end
   end
