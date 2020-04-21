@@ -49,4 +49,10 @@ class Song
     song.artist_name = artist
     song
   end
+  
+  def self.create_from_filename (mp3)
+    song = self.new_from_filename (mp3)
+    song.save
+    song
+  end
 end
